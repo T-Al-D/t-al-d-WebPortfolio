@@ -1,6 +1,7 @@
 # View the Website !
 
 https://t-al-d.github.io/t-al-d-WebPortfolio/
+I use the command `npm run githubpage` to make sure it can be viewed in github 
 
 # TAlDWebPortfolio
 
