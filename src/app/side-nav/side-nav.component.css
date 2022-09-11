@@ -1,0 +1,45 @@
+
+
+.sidenav-container {
+  height: 100%;
+  background: inherit;
+}
+
+.sidenav {
+  width: 170px;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+mat-toolbar, mat-sidenav {
+  color: #ffffff;
+  background: #2a2a2a;
+}
+
+
+mat-nav-list a {
+  color: #ffffff;
+}
+
+  mat-nav-list a:visited {
+    color: #9c9c9c;
+  }
+
+  mat-nav-list a:hover {
+    color: #000000;
+    background-color: #757575;
+    font-weight: bolder;
+  }
+
+
+#about-me{
+    color:#f20fe6;
+}
+
+#load-portfolio {
+  color: #0ff2eb;
+}
