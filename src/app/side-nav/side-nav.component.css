@@ -20,7 +20,6 @@ mat-toolbar, mat-sidenav {
   background: #2a2a2a;
 }
 
-
 mat-nav-list a {
   color: #ffffff;
 }
@@ -36,10 +35,24 @@ mat-nav-list a {
   }
 
 
-#about-me{
-    color:#f20fe6;
+.router {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.side-nav-header {
+  color: #56ee10;
+}
+
+
+#about-me {
+  color: #f20fdf;
 }
 
 #load-portfolio {
   color: #0ff2eb;
+}
+
+#activate-fun {
+  color: #ea761f;
 }

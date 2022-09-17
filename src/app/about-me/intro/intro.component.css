@@ -1,3 +1,16 @@
-p{
-    color: #ffffff;
+p {
+  color: #ffffff;
+}
+
+a {
+  color: #f5e913;
+}
+
+  a:visited {
+    color: #faca5a;
+  }
+
+.exception {
+  margin-left: 15px;
+  color: #a761f6;
 }
