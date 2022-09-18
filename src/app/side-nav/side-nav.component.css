@@ -28,9 +28,13 @@ mat-nav-list a {
     color: #9c9c9c;
   }
 
+  mat-nav-list a:focus {
+    border: solid #ffffff;
+  }
+
   mat-nav-list a:hover {
     color: #000000;
-    background-color: #757575;
+    background-color: #757575dd;
     font-weight: bolder;
   }
 
@@ -39,6 +43,13 @@ mat-nav-list a {
   margin-left: 4px;
   margin-right: 4px;
 }
+
+  .router canvas {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
 
 .side-nav-header {
   color: #56ee10;

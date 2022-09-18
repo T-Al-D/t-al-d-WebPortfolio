@@ -1,3 +1,39 @@
-p {
+div, p {
   color: #ffffff;
 }
+
+div {
+  justify-content: space-between;
+}
+
+  div p {
+    display: inline
+  }
+
+  div #python {
+    color: #fae87f;
+  }
+
+  div #c-sharp {
+    color: #97b9ff;
+  }
+
+  div #html {
+    color: #ffa566;
+  }
+
+  div #css {
+    color: #60e1fe;
+  }
+
+  div #type-script {
+    color: #42a8ff;
+  }
+
+  div #angular {
+    color: #ff6767;
+  }
+
+  div #v-studio {
+    color: #dc61ff;
+  }
