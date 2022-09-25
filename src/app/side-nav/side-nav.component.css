@@ -1,4 +1,6 @@
-
+mat-toolbar, mat-sidenav, a {
+  transition: 2.5s all ease-in-out;
+}
 
 .sidenav-container {
   height: 100%;
@@ -17,11 +19,12 @@
 
 mat-toolbar, mat-sidenav {
   color: #ffffff;
-  background: #2a2a2a;
+  background: #2a2a2a; 
 }
 
 mat-nav-list a {
   color: #ffffff;
+  transition: 0.5s all ease-in-out;
 }
 
   mat-nav-list a:visited {

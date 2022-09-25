@@ -1,4 +1,10 @@
-import { Component, ElementRef, HostListener, ViewChild } from "@angular/core";
+import {
+    AfterViewInit,
+    Component,
+    ElementRef,
+    HostListener,
+    ViewChild,
+} from "@angular/core";
 import { Particle } from "./Particles";
 
 @Component({
@@ -6,9 +12,10 @@ import { Particle } from "./Particles";
     templateUrl: "./main-router.component.html",
     styleUrls: ["./main-router.component.css"],
 })
-export class MainRouterComponent {
+export class MainRouterComponent implements AfterViewInit {
     constructor() {}
 
+    // RAINBOW MOUSEMOUVE
     // Access to a certain element in the DOM
     @ViewChild("canvasRef")
     canvasRef!: ElementRef<HTMLCanvasElement>;
@@ -105,8 +112,10 @@ export class MainRouterComponent {
         if (this.allowMouseEffect) {
             if (this.canvasRef !== null) {
                 // make canvas fit better
-                this.canvasRef.nativeElement.width = window.innerWidth;
-                this.canvasRef.nativeElement.height = window.innerHeight;
+                this.canvasRef.nativeElement.width =
+                    this.canvasRef.nativeElement.offsetWidth;
+                this.canvasRef.nativeElement.height =
+                    this.canvasRef.nativeElement.offsetHeight;
             }
             if (this.canvasContext !== null) {
                 // important clear first, then draw

@@ -1,10 +1,4 @@
-import {
-    Component,
-    ViewChild,
-    ElementRef,
-    AfterViewInit,
-    HostListener,
-} from "@angular/core";
+import { Component } from "@angular/core";
 import { BreakpointObserver, Breakpoints } from "@angular/cdk/layout";
 import { Observable } from "rxjs";
 import { map, shareReplay } from "rxjs/operators";
@@ -24,4 +18,6 @@ export class SideNavComponent {
         );
     constructor(private breakpointObserver: BreakpointObserver) {}
     // auto-generated
+
+    public matRippleColor = "#d9d9d9af";
 }

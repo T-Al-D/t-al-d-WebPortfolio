@@ -1,22 +1,22 @@
 import { NgModule } from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
-import { HttpClientModule} from "@angular/common/http";
 
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./header/header.component";
 import { FooterComponent } from "./footer/footer.component";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppRoutingModule, routingComponents } from "./app-routing.module";
 import { SideNavComponent } from "./side-nav/side-nav.component";
+import { MainRouterComponent } from "./main-router/main-router.component";
+import { GamesModule } from "./have-fun/games.module";
+
+import { BrowserModule } from "@angular/platform-browser";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { LayoutModule } from "@angular/cdk/layout";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatIconModule } from "@angular/material/icon";
 import { MatListModule } from "@angular/material/list";
-import { MatProgressBarModule } from "@angular/material/progress-bar";
-import { MainRouterComponent } from "./main-router/main-router.component";
-
+import { MatRippleModule } from "@angular/material/core";
 
 @NgModule({
     declarations: [
@@ -28,8 +28,10 @@ import { MainRouterComponent } from "./main-router/main-router.component";
         MainRouterComponent,
     ],
     imports: [
+        // seperate custom module (in folder)
+        GamesModule,
+        //
         BrowserModule,
-        HttpClientModule,
         BrowserAnimationsModule,
         AppRoutingModule,
         LayoutModule,
@@ -38,7 +40,7 @@ import { MainRouterComponent } from "./main-router/main-router.component";
         MatSidenavModule,
         MatIconModule,
         MatListModule,
-        MatProgressBarModule,
+        MatRippleModule,
     ],
     providers: [],
     bootstrap: [AppComponent],
