@@ -18,9 +18,9 @@
 
     <mat-toolbar id="activate-fun">HaveFun()</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="have-fun/move-io"><mat-icon>casino</mat-icon>&nbsp; Move.IO</a>
+      <a mat-list-item routerLink="have-fun/games"><mat-icon>casino</mat-icon>&nbsp; Mini-Games</a>
     </mat-nav-list>
-
+   
   </mat-sidenav>
   <mat-sidenav-content class="side-nav-header">
     <mat-toolbar>
@@ -33,14 +33,11 @@
               class="side-nav-header">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span class="side-nav-header">/* &nbsp; TODO: click left to discover more &nbsp; */</span>
+      <span id="under-header">/* &nbsp; TODO: click left to discover more &nbsp; */</span>
     </mat-toolbar>
-    <!-- Add Content Here -->
+    
     <!-- ROUTER -->
-    <div class="router">
-      <canvas #canvasRef></canvas>
-      <router-outlet></router-outlet>
-    </div>
+   <app-main-router></app-main-router>
   </mat-sidenav-content>
 </mat-sidenav-container>
 

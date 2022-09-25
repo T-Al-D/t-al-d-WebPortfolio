@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
+import { HttpClientModule} from "@angular/common/http";
 
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./header/header.component";
@@ -13,6 +14,8 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatIconModule } from "@angular/material/icon";
 import { MatListModule } from "@angular/material/list";
+import { MatProgressBarModule } from "@angular/material/progress-bar";
+import { MainRouterComponent } from "./main-router/main-router.component";
 
 
 @NgModule({
@@ -22,9 +25,11 @@ import { MatListModule } from "@angular/material/list";
         HeaderComponent,
         FooterComponent,
         SideNavComponent,
+        MainRouterComponent,
     ],
     imports: [
         BrowserModule,
+        HttpClientModule,
         BrowserAnimationsModule,
         AppRoutingModule,
         LayoutModule,
@@ -33,6 +38,7 @@ import { MatListModule } from "@angular/material/list";
         MatSidenavModule,
         MatIconModule,
         MatListModule,
+        MatProgressBarModule,
     ],
     providers: [],
     bootstrap: [AppComponent],

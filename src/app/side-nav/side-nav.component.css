@@ -38,23 +38,9 @@ mat-nav-list a {
     font-weight: bolder;
   }
 
-
-.router {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-  .router canvas {
-    position: fixed;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-  }
-
-.side-nav-header {
+.side-nav-header, #under-header {
   color: #56ee10;
 }
-
 
 #about-me {
   color: #f20fdf;

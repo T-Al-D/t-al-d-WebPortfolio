@@ -1,0 +1,30 @@
+.router {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+  .router canvas {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+
+#toggle-mouse-effect {
+  z-index: 2;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  text-align: start;
+  font-weight: bold;
+  height: 1.5rem;
+  width: 9.5rem;
+  line-height: 1.3rem;
+  color: #000000;
+  background: linear-gradient(-45deg, #fcfe2c, #56ee10, #af06d0);
+  border: 3px solid #12a5a2;
+}
+
+  #toggle-mouse-effect:hover {
+    box-shadow: inset 0 0 0 0.2rem #ffffff;
+  }

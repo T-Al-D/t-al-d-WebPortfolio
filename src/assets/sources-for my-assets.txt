@@ -1,0 +1,4 @@
+
+gifs: 
+component	     file                   from where?
+header		20-dot-night.gif  	  made myself with wick-Editor (https://www.wickeditor.com/editor/)  
