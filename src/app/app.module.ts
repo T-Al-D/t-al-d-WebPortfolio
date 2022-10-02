@@ -6,7 +6,7 @@ import { FooterComponent } from "./footer/footer.component";
 import { AppRoutingModule, routingComponents } from "./app-routing.module";
 import { SideNavComponent } from "./side-nav/side-nav.component";
 import { MainRouterComponent } from "./main-router/main-router.component";
-import { GamesModule } from "./have-fun/games.module";
+//import { GamesComponent } from "./have-fun/games/games.component";
 
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -26,11 +26,9 @@ import { MatRippleModule } from "@angular/material/core";
         FooterComponent,
         SideNavComponent,
         MainRouterComponent,
+        //GamesComponent,
     ],
     imports: [
-        // seperate custom module (in folder)
-        GamesModule,
-        //
         BrowserModule,
         BrowserAnimationsModule,
         AppRoutingModule,

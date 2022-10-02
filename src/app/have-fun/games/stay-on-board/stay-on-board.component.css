@@ -1,0 +1,370 @@
+
+/* I´m working with variables so it can be changed faster*/
+* {
+  --borad-margin: 2px;
+  --top-distance: 20px;
+  --board-width: 128px;
+  --board-height: 64px;
+  --box-shadow-animation: inset var(--board-width) 0 0 0 #85d84c;
+}
+
+#background {
+  position: relative;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+  #background #mini-header {
+    text-align: center;
+  }
+
+  #background #quiz, #background #information {
+    position: relative;
+    margin: 2px;
+    display: inline-flex;
+    font-size: 1.1rem;
+  }
+
+    #background #quiz details {
+      border: 3px solid #ee9f0e;
+    }
+
+    #background #information details {
+      border: 3px solid #12dd34;
+    }
+
+  #background details {
+    position: relative;
+    margin: 0px 0px 0px 10px;
+    padding: 0.5em 0.5em 0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #background #game-interface {
+    position: relative;
+    min-height: 100%;
+    height: 100vh; /*vh = viewpoint height, makes sure the screen stays in color*/
+  }
+
+    #background #game-interface #very-easy-board {
+      position: absolute;
+      margin: var(--borad-margin);
+      top: calc(var(--top-distance)*1);
+      height: var(--board-height);
+      width: var(--board-width);
+      text-align: center;
+      user-select: none;
+      color: #ffffff;
+      border: 3px solid #000000;
+      background-color: #0f717e;
+    }
+
+      #background #game-interface #very-easy-board:hover {
+        animation: very-easy-surf 15s forwards;
+        cursor: pointer;
+      }
+
+    #background #game-interface #easy-board {
+      position: absolute;
+      margin: var(--borad-margin);
+      top: calc(var(--top-distance)*5);
+      height: var(--board-height);
+      width: var(--board-width);
+      text-align: center;
+      user-select: none;
+      color: #ffffff;
+      border: 3px solid #000000;
+      background-color: #140194;
+    }
+
+      #background #game-interface #easy-board:hover {
+        animation: easy-surf 30s forwards;
+        cursor: pointer;
+      }
+
+    #background #game-interface #intermediate-board {
+      position: absolute;
+      margin: var(--borad-margin);
+      top: calc(var(--top-distance)*9);
+      height: var(--board-height);
+      width: var(--board-width);
+      text-align: center;
+      user-select: none;
+      color: #ffffff;
+      border: 3px solid #000000;
+      background-color: #451582;
+    }
+
+      #background #game-interface #intermediate-board:hover {
+        animation: intermediate-surf 45s forwards;
+        cursor: pointer;
+      }
+
+    #background #game-interface #hard-board {
+      position: absolute;
+      margin: var(--borad-margin);
+      top: calc(var(--top-distance)*13);
+      height: var(--board-height);
+      width: var(--board-width);
+      text-align: center;
+      user-select: none;
+      color: #ffffff;
+      border: 3px solid #000000;
+      background-color: #700e62;
+    }
+
+      #background #game-interface #hard-board:hover {
+        animation: hard-surf 60s forwards;
+        cursor: pointer;
+      }
+
+    #background #game-interface #very-hard-board {
+      position: absolute;
+      margin: var(--borad-margin);
+      top: calc(var(--top-distance)*17);
+      height: calc(var(--board-height)*1.5);
+      width: var(--board-width);
+      text-align: center;
+      user-select: none;
+      color: #ffffff;
+      border: 3px solid #000000;
+      background-color: #74172e;
+    }
+
+      #background #game-interface #very-hard-board:hover {
+        animation: very-hard-surf 75s forwards;
+        cursor: pointer;
+      }
+
+/******* VERY EASY ******************/
+@keyframes very-easy-surf {
+  25% {
+    transform: translate(40vh, 0vh);
+  }
+
+  50% {
+    transform: translate(30vh, 0vh);
+  }
+
+  75% {
+    transform: translate(30vh, 10vh);
+  }
+
+  100% {
+    transform: translate(30vh, 0vh);
+    box-shadow: var(--box-shadow-animation);
+  }
+}
+
+/*************** EASY ******************/
+@keyframes easy-surf {
+  20% {
+    transform: translate(65vh, 0vh);
+  }
+
+  40% {
+    transform: translate(65vh, 50vh);
+  }
+
+  60% {
+    transform: translate(45vh, 50vh);
+  }
+
+  80% {
+    transform: translate(45vh, 20vh);
+  }
+
+  100% {
+    transform: translate(60vh, 20vh);
+    box-shadow: var(--box-shadow-animation);
+  }
+}
+
+/*********** INTERMEDATE ************/
+@keyframes intermediate-surf {
+  10% {
+    transform: translate(25vh, 0vh);
+  }
+
+  20% {
+    transform: translate(70vh,20vh);
+  }
+
+  30% {
+    transform: translate(20vh, 30vh);
+  }
+
+  40% {
+    transform: translate(30vh, 20vh);
+  }
+
+  50% {
+    transform: translate(30vh, 40vh);
+  }
+
+  60% {
+    transform: translate(40vh, 45vh);
+  }
+
+  70% {
+    transform: translate(60vh, 50vh);
+  }
+
+  80% {
+    transform: translate(40vh, 50vh);
+  }
+
+  90% {
+    transform: translate(10vh, 50vh);
+  }
+
+  100% {
+    transform: translate(50vh, 20vh);
+    box-shadow: var(--box-shadow-animation);
+  }
+}
+
+/********** HARD ******************/
+@keyframes hard-surf {
+  7% {
+    transform: translate( 15vh, 0vh);
+  }
+
+  14% {
+    transform: translate(20vh,10vh);
+  }
+
+  21% {
+    transform: translate(30vh, 30vh);
+  }
+
+  28% {
+    transform: translate(35vh, 5vh);
+  }
+
+  35% {
+    transform: translate(40vh, 40vh);
+  }
+
+  42% {
+    transform: translate(70vh, 45vh);
+  }
+
+  49% {
+    transform: translate(60vh, 10vh);
+  }
+
+  56% {
+    transform: translate(35vh, 10vh);
+  }
+
+  63% {
+    transform: translate(20vh, 10vh);
+  }
+
+  70% {
+    transform: translate(10vh, 20vh);
+  }
+
+  77% {
+    transform: translate(60vh, 45vh);
+  }
+
+  84% {
+    transform: translate(40vh, 15vh);
+  }
+
+  91% {
+    transform: translate(10vh, 35vh);
+  }
+
+  100% {
+    transform: translate(50vh, 20vh);
+    box-shadow: var(--box-shadow-animation);
+  }
+}
+
+/******* VERY HARD (insane) ******************/
+@keyframes very-hard-surf {
+  5% {
+    transform: translate(10vh, 35vh);
+  }
+
+  10% {
+    transform: translate(55vh,20vh);
+  }
+
+  15% {
+    transform: rotate(-25deg);
+  }
+
+  20% {
+    transform: translate(20vh, 25vh);
+  }
+
+  25% {
+    transform: translate(30vh, 40vh);
+  }
+
+  30% {
+    transform: translate(10vh, 25vh);
+  }
+
+  35% {
+    transform: rotate(25deg);
+  }
+
+  40% {
+    transform: translate(40vh, 50vh);
+  }
+
+  45% {
+    transform: translate(10vh, 50vh);
+  }
+
+  50% {
+    transform: translate(50vh, 20vh);
+  }
+
+  55% {
+    transform: translate(20vh, 10vh);
+  }
+
+  60% {
+    transform: translate(70vh,20vh);
+  }
+
+  65% {
+    transform: translate(20vh, 30vh);
+  }
+
+  70% {
+    transform: rotate(25deg);
+  }
+
+  75% {
+    transform: translate(20vh, 40vh);
+  }
+
+  80% {
+    transform: translate(40vh, 45vh);
+  }
+
+  85% {
+    transform: translate(50vh, 55vh);
+  }
+
+  90% {
+    transform: translate(35vh, 50vh);
+  }
+
+  95% {
+    transform: translate(10vh, 50vh);
+  }
+
+  100% {
+    transform: translate(40vh, 20vh);
+    box-shadow: var(--box-shadow-animation);
+  }
+}

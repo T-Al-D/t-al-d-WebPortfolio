@@ -19,5 +19,5 @@ export class SideNavComponent {
     constructor(private breakpointObserver: BreakpointObserver) {}
     // auto-generated
 
-    public matRippleColor = "#d9d9d9af";
+    public matRippleColor = "#cecece";
 }

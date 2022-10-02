@@ -15,7 +15,7 @@ import { Particle } from "./Particles";
 export class MainRouterComponent implements AfterViewInit {
     constructor() {}
 
-    // RAINBOW MOUSEMOUVE
+    ////////////   RAINBOW MOUSEMOUVE   ////////////////////
     // Access to a certain element in the DOM
     @ViewChild("canvasRef")
     canvasRef!: ElementRef<HTMLCanvasElement>;
@@ -36,7 +36,7 @@ export class MainRouterComponent implements AfterViewInit {
 
     // fill the array with new Particles
     fillParticleArray(xPos: number, yPos: number) {
-        for (let i = 0; i < 7; i++) {
+        for (let i = 0; i < 6; i++) {
             const particle = new Particle(
                 xPos,
                 yPos,
@@ -53,7 +53,7 @@ export class MainRouterComponent implements AfterViewInit {
     emptyParticleArray() {
         for (let i = 0; i < this.particlesArray.length; i++) {
             const particle = this.particlesArray[i];
-            if (particle.size < 2) {
+            if (particle.size < 2.5) {
                 this.particlesArray.splice(i, 1);
             }
         }
