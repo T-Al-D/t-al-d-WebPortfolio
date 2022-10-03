@@ -1,0 +1,40 @@
+#background {
+  position: relative;
+  color: #1d1553;
+  background-color: #ffffffff;
+}
+
+  #background #mini-header {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  #background #information {
+    position: relative;
+    margin: 2px;
+    display: inline-flex;
+    font-size: 1.1rem;
+    border: 3px solid #12dd34;
+  }
+
+  #background #game-interface {
+    position: relative;
+    height: 60vh; /*vh = viewpoint height, makes sure the screen stays in color*/
+    width: 50vh;
+  }
+
+    #background #game-interface #controls {
+      float: left;
+      margin-top: 2%;
+      margin-left: 2%;
+      width: 7vh;
+      border: 3px solid #1d1553;
+    }
+
+    #background #game-interface canvas {
+      margin-top: 10%;
+      margin-left: 25%;
+      height: 40vh;
+      width: 60vh;
+      background-color: #07041f;
+    }

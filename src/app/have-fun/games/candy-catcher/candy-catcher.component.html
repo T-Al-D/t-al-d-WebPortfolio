@@ -1,0 +1,37 @@
+<div id="background">
+  <div id="mini-header">
+    <h3>Candy Catcher (Game made with HTML Canvas and TypeScript!)</h3>
+  </div>
+  <div id="information">
+    <details>
+      <summary>RULES</summary>
+      Catch the falling "candy" into your basket! After you missed 3 "candies" you can start again.
+    </details>
+  </div>
+  <div id="game-interface">
+    <div id="controls">
+      <div>
+        <label>
+          SCORE: {{this.player.score}}
+        </label>
+      </div>
+      <div>
+        <label>
+          LIFE: {{this.player.lifes}}
+        </label>
+      </div>
+      <div>
+        <button (click)="onStartClick()">
+          START NEW
+        </button>
+      </div>
+      <div>
+        <button (click)="onStopClick()">
+          STOP
+        </button>
+      </div>
+    </div>
+    <canvas #canvasRef>
+    </canvas>
+  </div>
+</div>
